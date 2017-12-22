@@ -1,0 +1,49 @@
+<md-content class="ads-content">
+
+  <md-toolbar class="md-accent ads-nav-bar">
+    <div class="md-toolbar-tools">
+      <md-button
+        ui-sref="menu-experimento()"
+        class="md-icon-button"
+        aria-label="Settings">
+        <i class="material-icons">add_circle</i>
+      </md-button>
+      <h2>Experimento</h2>
+      <span flex="flex"></span>
+      <md-button
+        ui-sref="menu-inicial()"
+        class="md-icon-button"
+        aria-label="Favorite">
+        <i class="material-icons">home</i>
+      </md-button>
+    </div>
+  </md-toolbar>
+
+  <div layout="column" class="ads-column">
+    <md-table-container>
+      <table md-table="md-table" md-row-select="options.rowSelection" md-progress="promise">
+        <thead md-head="md-head">
+          <tr md-row="md-row">
+            <th md-column="md-column"><span>Recurso</span></th>
+            <th md-column="md-column"><span>Média</span></th>
+            <th md-column="md-column"><span>Desvio padrão</span></th>
+          </tr>
+        </thead>
+        <tbody md-body="md-body">
+          <tr md-row="md-row" >
+            <td md-cell="md-cell">{{recurso}}</td>
+            <td md-cell="md-cell">{{mediaParaExibir.media | number:4}}</td>
+            <td md-cell="md-cell">{{mediaParaExibir.desvioPadrao | number:4}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </md-table-container>
+  </div>
+  
+</md-content>
+
+
+
+
+
+

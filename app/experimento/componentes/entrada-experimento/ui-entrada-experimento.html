@@ -1,0 +1,48 @@
+<md-content class="ads-content">
+
+  <md-toolbar class="md-accent ads-nav-bar">
+    <div class="md-toolbar-tools">
+      <md-button
+        ui-sref="menu-experimento()"
+        class="md-icon-button"
+        aria-label="Settings">
+        <i class="material-icons">arrow_back</i>
+      </md-button>
+      <h2>Experimento</h2>
+      <span flex="flex"></span>
+      <md-button
+        ui-sref="menu-inicial()"
+        class="md-icon-button"
+        aria-label="Favorite">
+        <i class="material-icons">home</i>
+      </md-button>
+    </div>
+  </md-toolbar>
+
+  <div layout="column" class="ads-column">
+
+  <div class="one">
+    <div style="text-align: center; margin: 20px 0; color: #999">Informe os parâmetros de entrada</div>
+
+    <div style="display: flex">
+      <md-input-container style="flex-grow: 1; flex-shrink: 1">
+        <label>Número de eventos</label>
+        <input ng-model="numeroDeEventos">
+      </md-input-container>
+
+      <md-input-container style="flex-grow: 1; flex-shrink: 1">
+        <label>Número de replicações</label>
+        <input ng-model="numeroDeReplicacoes">
+      </md-input-container>
+    </div>
+
+    <md-button
+      ng-click="executarExperimento(numeroDeEventos, numeroDeReplicacoes)"
+      class="md-raised md-primary" style="width: 100%; margin: 0;">Executar</md-button>
+
+    </div>
+
+</md-content>
+
+
+

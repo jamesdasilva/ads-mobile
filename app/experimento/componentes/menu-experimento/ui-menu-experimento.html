@@ -1,0 +1,35 @@
+<md-content class="ads-content">
+
+  <md-toolbar class="md-accent ads-nav-bar">
+    <div class="md-toolbar-tools">
+      <md-button
+        ui-sref="menu-inicial()"
+        class="md-icon-button"
+        aria-label="Settings">
+        <i class="material-icons">arrow_back</i>
+      </md-button>
+      <h2>Experimento</h2>
+      <span flex="flex"></span>
+      <md-button
+        ui-sref="menu-inicial()"
+        class="md-icon-button"
+        aria-label="Favorite">
+        <i class="material-icons">home</i>
+      </md-button>
+    </div>
+  </md-toolbar>
+
+  <div layout="column" class="ads-column">
+
+    <div class="one">
+      <div style="text-align: center; margin: 20px 0; color: #999">Escolha um recurso para medir taxa de serviço</div>
+      <section layout="row" layout-sm="column" layout-align="center center" layout-wrap="layout-wrap">
+        <md-button ng-repeat="recurso in recursos"
+        ui-sref="entrada-experimento({recurso: recurso.slug})"
+        class="md-raised md-primary" style="width: 100%">{{recurso.nome}}</md-button>
+      </section>
+    </div>
+
+  </div>
+  
+</md-content>

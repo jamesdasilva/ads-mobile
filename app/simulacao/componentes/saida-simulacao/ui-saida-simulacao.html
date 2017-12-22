@@ -1,0 +1,74 @@
+<md-content class="ads-content">
+
+  <md-toolbar class="md-accent ads-nav-bar">
+    <div class="md-toolbar-tools">
+      <md-button
+        ui-sref="menu-simulacao()"
+        class="md-icon-button"
+        aria-label="More">
+        <i class="material-icons">add_circle_outline</i>
+      </md-button>
+      <h2>Simulação</h2>
+      <span flex="layout-wrap"></span>
+      <md-button
+        ui-sref="menu-inicial()"
+        class="md-icon-button"
+        aria-label="Favorite">
+        <i class="material-icons">home</i>
+      </md-button>
+      
+    </div>
+  </md-toolbar>
+
+  <div layout="column" class="ads-column">
+
+     <md-table-container>
+        <table md-table="md-table">
+          <thead md-head="md-head" >
+            <tr md-row="md-row">
+              <th md-column="md-column"><span>r</span></th>
+              <th md-column="md-column"><span>Enq</span></th>
+              <th md-column="md-column"><span>Er</span></th>
+              <th md-column="md-column"><span>Es</span></th>
+              <th md-column="md-column"><span>Ew</span></th>
+              <th md-column="md-column"><span>Vnq</span></th>
+              <th md-column="md-column"><span>Vr</span></th>
+              <th md-column="md-column"><span>Vs</span></th>
+              <th md-column="md-column"><span>Vw</span></th>
+              <th md-column="md-column"><span>T</span></th>
+              <th md-column="md-column"><span>U</span></th>
+              <th md-column="md-column"><span>P0</span></th>
+            </tr>
+          </thead>
+
+          <tbody md-body="md-body">
+            <tr md-row="md-row"  ng-repeat="resultado in resultados">
+              <td md-cell="md-cell">{{$index + 1}}</td>
+              <td md-cell="md-cell">{{resultado.Enq | number: 3}}</td>
+              <td md-cell="md-cell">{{resultado.Er | number: 3}}</td>
+              <td md-cell="md-cell">{{resultado.Es | number: 3}}</td>
+              <td md-cell="md-cell">{{resultado.Ew | number: 3}}</td>
+              <td md-cell="md-cell">{{resultado.Vnq | number: 3}}</td>
+              <td md-cell="md-cell">{{resultado.Vr | number: 3}}</td>
+              <td md-cell="md-cell">{{resultado.Vs | number: 3}}</td>
+              <td md-cell="md-cell">{{resultado.Vw | number: 3}}</td>
+              <td md-cell="md-cell">{{resultado.T | number: 3}}</td>
+              <td md-cell="md-cell">{{resultado.U | number: 3}}</td>
+              <td md-cell="md-cell">{{resultado.p0 | number: 3}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </md-table-container>
+
+  </div>
+
+</md-content>
+
+
+
+
+
+
+
+
+

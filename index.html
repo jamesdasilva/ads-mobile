@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html ng-app="ads-mobile">
+    <head>
+        <meta charset="UTF-8">
+
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <link rel="stylesheet" href="node_modules/material-design-icons-iconfont/dist/material-design-icons.css">
+        <link rel="stylesheet" href="node_modules/angular-material/angular-material.min.css">
+        <link rel="stylesheet" href="node_modules/angular-material-data-table/dist/md-data-table.min.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+
+        <title>Ads Mobile</title>
+    </head>
+    <body>
+
+        <ui-view></ui-view>
+
+        
+        <script type="text/javascript" src="cordova.js"></script>
+
+        <script src="node_modules/angular/angular.min.js"></script>
+        <script src="node_modules/@uirouter/angularjs/release/angular-ui-router.min.js"></script>
+        <script src="node_modules/angular-animate/angular-animate.min.js"></script>
+        <script src="node_modules/angular-aria/angular-aria.min.js"></script>
+        <script src="node_modules/angular-messages/angular-messages.min.js"></script>
+        <script src="node_modules/angular-material/angular-material.min.js"></script>
+        <script src="node_modules/angular-material-data-table/dist/md-data-table.min.js"></script>
+        
+
+        <!-- main -->
+        <script src="app/app.js"></script>
+        <script src="app/app.states.js"></script>
+        <script src="app/ui-menu-inicial.component.js"></script>
+
+
+        <!-- motor de experimento -->
+        <script src="app/experimento/motor-de-experimento/motor-de-experimento.module.js"></script>
+        <script src="app/experimento/motor-de-experimento/experimento.service.js"></script>
+        <script src="app/experimento/motor-de-experimento/calculador-media.service.js"></script>
+
+        <!-- componentes do experimento -->
+        <script src="app/experimento/componentes/menu-experimento/ui-menu-experimento.component.js"></script>
+        <script src="app/experimento/componentes/menu-experimento/ui-menu-experimento.controller.js"></script>
+
+        <script src="app/experimento/componentes/entrada-experimento/ui-entrada-experimento.component.js"></script>
+        <script src="app/experimento/componentes/entrada-experimento/ui-entrada-experimento.controller.js"></script>
+
+        <script src="app/experimento/componentes/executando-experimento/ui-executando-experimento.component.js"></script>
+        <script src="app/experimento/componentes/executando-experimento/ui-executando-experimento.controller.js"></script>
+
+        <script src="app/experimento/componentes/saida-experimento/ui-saida-experimento.component.js"></script>
+        <script src="app/experimento/componentes/saida-experimento/ui-saida-experimento.controller.js"></script>
+
+        <!-- recursos de experimento-->
+        <script src="app/experimento/recursos/medidor-de-geolocalizacao.service.js"></script>
+        <script src="app/experimento/recursos/multiplicador-de-matrizes.service.js"></script>
+        <script src="app/experimento/recursos/calculador-de-fatorial.service.js"></script>
+
+        <!-- componentes da simulação -->
+        <script src="app/simulacao/componentes/menu-simulacao/ui-menu-simulacao.component.js"></script>
+        <script src="app/simulacao/componentes/menu-simulacao/ui-menu-simulacao.controller.js"></script>
+
+        <script src="app/simulacao/componentes/entrada-simulacao/ui-entrada-simulacao.component.js"></script>
+        <script src="app/simulacao/componentes/entrada-simulacao/ui-entrada-simulacao.controller.js"></script>
+
+        <script src="app/simulacao/componentes/executando-simulacao/ui-executando-simulacao.component.js"></script>
+        <script src="app/simulacao/componentes/executando-simulacao/ui-executando-simulacao.controller.js"></script>
+        
+        <script src="app/simulacao/componentes/saida-simulacao/ui-saida-simulacao.component.js"></script>
+        <script src="app/simulacao/componentes/saida-simulacao/ui-saida-simulacao.controller.js"></script>
+
+        <!-- motor de simulação -->
+        <script src="app/simulacao/motor-de-simulacao/motor-de-simulacao.module.js"></script>
+        <script src="app/simulacao/motor-de-simulacao/simulacao.service.js"></script>
+        <script src="app/simulacao/motor-de-simulacao/qsri.service.js"></script>
+
+
+
+    </body>
+</html>

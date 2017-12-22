@@ -1,0 +1,58 @@
+<md-content class="ads-content">
+
+  <md-toolbar class="md-accent ads-nav-bar">
+    <div class="md-toolbar-tools">
+      <md-button
+        ui-sref="menu-simulacao()"
+        class="md-icon-button"
+        aria-label="Settings">
+        <i class="material-icons">arrow_back</i>
+      </md-button>
+      <h2>Simulação</h2>
+      <span flex="flex"></span>
+      <md-button
+        ui-sref="menu-inicial()"
+        class="md-icon-button"
+        aria-label="Favorite">
+        <i class="material-icons">home</i>
+      </md-button>
+    </div>
+  </md-toolbar>
+
+  <div layout="column" class="ads-column">
+
+  <div class="one">
+    <div style="text-align: center; margin: 20px 0; color: #999">Informe os parâmetros</div>
+
+      <div style="display: flex">
+        <md-input-container style="flex-grow: 1">
+          <label>Número de eventos</label>
+          <input ng-model="numeroDeEventos">
+        </md-input-container>
+
+        <md-input-container style="flex-grow: 1">
+          <label>Número de replicações</label>
+          <input ng-model="numeroDeReplicacoes">
+        </md-input-container>
+      </div>
+      <div style="display: flex">
+        <md-input-container style="flex-grow: 1">
+          <label>Taxa de chegada</label>
+          <input ng-model="taxaDeChegada">
+        </md-input-container>
+
+        <md-input-container style="flex-grow: 1">
+          <label>Taxa de serviço</label>
+          <input ng-model="taxaDeServico"/>
+        </md-input-container>
+      </div>
+
+      <md-button style="margin: 0; width: 100%"
+        ng-click="executarSimulacao(numeroDeEventos, numeroDeReplicacoes, taxaDeChegada, taxaDeServico)"
+        class="md-raised md-primary">Executar</md-button>
+
+    </div>
+
+</md-content>
+
+

@@ -1,0 +1,32 @@
+<md-content class="ads-content">
+
+  <md-toolbar class="md-accent ads-nav-bar">
+    <div class="md-toolbar-tools">
+      <md-button
+        ui-sref="menu-inicial()"
+        class="md-icon-button">
+        <i class="material-icons">arrow_back</i>
+      </md-button>
+      <h2>Simulação</h2>
+      <span flex="flex"></span>
+      <md-button
+        ui-sref="menu-inicial()"
+        class="md-icon-button">
+        <i class="material-icons">home</i>
+      </md-button>
+    </div>
+  </md-toolbar>
+
+  <div layout="column" class="ads-column">
+
+    <div class="one">
+      <div style="text-align: center; margin: 20px 0; color: #999">Escolha um recurso para simular desempenho</div>
+      <section layout="row" layout-sm="column" layout-align="center center" layout-wrap="layout-wrap">
+        <md-button ng-repeat="recurso in recursos"
+        ui-sref="entrada-simulacao({recurso: recurso.slug})"
+        class="md-raised md-primary" style="width: 100%">{{recurso.nome}}</md-button>
+      </section>
+    </div>
+
+  </div>
+</md-content>
